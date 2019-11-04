@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Skeleton View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SkeletonViewController" customModule="GradientLayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rm7-d5-ktj" customClass="SkeletonView" customModule="GradientLayer" customModuleProvider="target">
+                                <rect key="frame" x="38" y="181.5" width="90" height="90"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="M2u-pw-1RU"/>
+                                    <constraint firstAttribute="height" constant="90" id="rTC-rc-MTX"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zNJ-1G-4Jb" customClass="SkeletonView" customModule="GradientLayer" customModuleProvider="target">
+                                <rect key="frame" x="142" y="191.5" width="200" height="20"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="AuC-qP-sUV"/>
+                                    <constraint firstAttribute="height" constant="20" id="D29-MI-DBR"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uTJ-D2-v7N" customClass="SkeletonView" customModule="GradientLayer" customModuleProvider="target">
+                                <rect key="frame" x="142" y="236.5" width="150" height="20"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="36L-ov-knS"/>
+                                    <constraint firstAttribute="width" constant="150" id="PsO-vL-MFE"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="uTJ-D2-v7N" firstAttribute="bottom" secondItem="rm7-d5-ktj" secondAttribute="bottom" constant="-15" id="2T7-9x-qfE"/>
+                            <constraint firstItem="uTJ-D2-v7N" firstAttribute="leading" secondItem="zNJ-1G-4Jb" secondAttribute="leading" id="3g6-CV-ZQw"/>
+                            <constraint firstItem="zNJ-1G-4Jb" firstAttribute="leading" secondItem="rm7-d5-ktj" secondAttribute="trailing" constant="14" id="6Ha-Dk-3Xs"/>
+                            <constraint firstItem="rm7-d5-ktj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" multiplier="0.4" id="Od0-V6-Ho2"/>
+                            <constraint firstItem="rm7-d5-ktj" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.5" id="U6s-7e-v4P"/>
+                            <constraint firstItem="uTJ-D2-v7N" firstAttribute="leading" secondItem="rm7-d5-ktj" secondAttribute="trailing" constant="14" id="a9v-Ya-sA6"/>
+                            <constraint firstItem="zNJ-1G-4Jb" firstAttribute="top" secondItem="rm7-d5-ktj" secondAttribute="top" constant="10" id="bp2-3e-qLk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="skeletonView" destination="rm7-d5-ktj" id="y8c-tS-gq2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>
